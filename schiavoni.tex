@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+
+\title{Introducción a Packet Tracer}
+\author{Juan Schiavoni}
+\date{Agosto 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Packet Tracer}
+El Packet tracer es una herramienta desarrollada por \textbf{CISCO}, y utilizada para la simulación de redes de datos. Un software donde los usuarios pueden crear, simular y configurar redes informáticas, lo que ayuda a los docentes y estudiantes a tener una explicacion visual de cómo funcionan las redes, para su mejor comprensión.
+
+La funcionalidad de Packet Tracer incluye la simulación de dispositivos de red como routers, switches, servidores y dispositivos finales, lo que permite a los usuarios comprender cómo interactúan y se comunican entre sí.
+
+Una de las características más destacadas de Packet Tracer es su interfaz intuitiva y fácil de usar. Los usuarios pueden arrastrar y soltar dispositivos de red en el área de trabajo, conectarlos mediante cables virtuales y configurar sus propiedades según sea necesario.
+
+\vspace{10pt}
+
+La interfaz del programa cuenta con una \underline{barra de herramientas} en la parte superior donde podemos encontrar: select, inspect, delete, resize, place note, draw line, draw rectangle, etc. Luego contamos con dos espacios de trabajo: físico y lógico.
+
+- Lógico (Logical): es la pantalla principal que se ve al abrir el programa.
+
+- Físico (Physical): Puede crear una topologia mas detallada cambiando al campo fisico.
+
+\vspace{10pt}
+
+Por debajo encontramos el \underline{Area de selección de dispositivos de Red} donde encontramos:
+
+- Network Devices: Routers, Switches y Hubs.
+
+- End Devices: PC, notebooks, smartphones, servidores, impresoras, TVs, etc.
+
+-Connections: Console, Copper Straight-Through, Copper Cross-Over, Fiber, Phone, Coaxial, Octal, USB, etc.
+
+\vspace{10pt}
+
+Por ultimo a la derecha tenenmos los \underline{modos de visualización}:
+
+- Realtime: la red se comporta como lo haria en la realidad.
+
+- Simulation: podemos controlar los intervalos de tiempo, la transferencia de datos y el funcionamiento interno de la red.
+
+\begin{center}
+    \includegraphics[width=1\linewidth]{Packet_Tracer.png}
+\end{center}
+
+\vspace{10pt}
+\section{Dispositivos Finales}
+Los \textbf{End Devices}(Dispositivos Finales) representan el inicio y el final del tráfico de red. A continuación los que veremos en este curso:
+
+\begin{center}
+    \includegraphics[width=1\linewidth]{Dispositivos_Finales.png}
+\end{center}
+
+- PC: Representa una computadora de escritorio que se conecta a la red para realizar diversas taresas. En ella podemos poner varios modulos que me permiten configurar diversas interfaces de red(Ethernet). Puede ejecutar una gran variedad de aplicaciones de red y configurar direcciones IP, mascaras de subred, y servidores DNS.
+
+- Laptop: Ofrece caracteristicas similares a las de un PC de escritorio con el beneficio de la movilidad. Se usa en escenarios donde la conexión inalámbrica es crucial, como en redes Wi-Fi.
+
+- Servidores: es un dispositivo que proporciona servicios a otros dispositivos en la red. En Packet Tracer puedo configurar un servidor para realizar una variedad de tareas relacionadas con la administración y configuración de redes.
+
+- Printer: simula una impresora conectada a una red, permitiendo a otros dispositivos mandar trabajos de impresión a través de la red.
+
+\vspace{10pt}
+\section{Dispositivos de Red}
+Los \textbf{Network devices} (dispositivos de red) que verenos en este curso son los Routers, los Switches y los Hubs. Estos dispositivos nos permiten construir y simular redes de comunicación de datos en diferentes topologias y escenarios
+
+\begin{center}
+    \includegraphics[width=1\linewidth]{Dispositivos_Red.png}
+\end{center}
+
+- Routers: dispositivos que encaminan los paquetes de datos entre las redes, y aseguran que los datos lleguen usando la ruta disponible mas conveniente
+
+- Switvhes: dispositivos que conectan a varios dispositivos dentro de una misma red local (LAN) y permite la comunicación entre ellos, gestionando el tráfico de datos entre los dispositivos conectados
+
+- Hubs: son dispositivos que reenvian los datos a todos los dispositivos conectados en una red. a diferencia de los swiches son menos eficientes ya que los hubs transmiten los datos a los puertos sin segmentar el tráfico 
+
+\vspace{10pt}
+\section{Cableado}
+En Packet Tracer, el cableado es esencial para conectar los dispositivos de red y crear una topología funcional.Cada tipo de cable cumple una función específica para conectar distintos dispositivos dentro de una red, permitiendo que los paquetes de datos fluyan correctamente entre los dispositivos. La selección correcta de cables asegura que la red esté bien estructurada y funcional. Existen varios tipos de cables que se utilizan según el tipo de conexión requerida entre los dispositivos:
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{cableado.png}
+\end{center}
+
+- Console Cable: se utiliza para la administracion de routers y switches, conecta un puerto de consola de un router o switcher a un puerto serial en un PC
+
+- Copper Straight-Through Cable: Sirve para conectar PCs o Laptops a dispositivos de red como switches o conectar routers a switchers. Es el cable mas común para establecer conexiones en redes locales 
+
+- Copper Cross-Over Cable: se utiliza para conectar dos dispositivos similares entre sí, como dos switches o dos PCs. Facilitan la configuración de enlaces directos entre dispositivos sin necesidad de un dispositivo intermedio.
+
+- Fiber Cable: Se usa principalmente para conectar routers o switches de alto rendimiento, simulando conexiones rápidas y confiables, en largas distancias o para redes que requieren un gran ancho de banda. 
+
+- USB Cable: se usa para conectar dispositivos que soporten interfaces USB. No se utiliza para transmitir datos en una red tradicional, sino más bien para configuraciones o conexiones locales entre dispositivos. Ofrece una forma más sencilla y moderna de gestionar configuraciones
+
+\vspace{10pt}
+\section{Conectar dos Computadoras}
+Para conectar las dos PCs necesitamos un cable \textbf{Copper Cross-Over}. Para solo dos PCs no tengo conflictos, pero en caso de querer agragar mas computadoras a mi red no se podria conectar. Esto lo solucionamos mediante el uso de, por ejemplo, un Hub. 
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Conectar2.png}
+\end{center}
+
+\vspace{10pt}
+\section{Referencias y GitHub}
+
+\begin{itemize}
+    \item {The Cisco Learning Network}: \href{https://learningnetwork.cisco.com/s/article/el-software-de-simulacion-cisco-packet-tracer}{learningnetwork.cisco.com}
+    \item {Qué es Packet Tracer y cómo usarlo?}: \href{https://ccnadesdecero.es/que-es-cisco-packet-tracer/}{ccnadesdecero.es}
+    \item {Funciones de Packet Tracer}: \href{https://www.tokioschool.com/noticias/cisco-packet-tracer/}{tokioschool.com}
+    \item {Documento Fuente}: \href{https://github.com/JuanSchiavoni/Intro_Packet_Tracer}{github.com/JuanSchiavoni}
+\end{itemize}
+
+\end{document}
